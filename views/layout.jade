@@ -1,0 +1,28 @@
+doctype 5
+html
+	head
+		title= title
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Chivo:400,400italic,900,900italic&subset=latin,latin-ext')
+		link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		script(type='text/javascript', src='/javascripts/jquery-1.8.2.min.js')
+		script(type='text/javascript', src='/js/templates.js')
+		script(type='text/javascript', src='/javascripts/website.js')
+		
+	body
+		header.span3
+			section#logo_container
+				a#logo iulogy
+				span#logo-text making sites and stuff
+			section
+				nav
+					ul
+						li
+							a(href="") websites
+						li
+							a(href="") cool stuff
+						li
+							a(href="/me", data-component='#contents', data-source='me').data-api me
+		section#contents
+			block content
